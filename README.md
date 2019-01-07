@@ -31,11 +31,11 @@ Connected React Router requires **React 16.4 and React Redux 6.0 or later**.
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install --save connected-react-router
+    $ npm install --save connected-react-router-config
 
 Or [yarn](https://yarnpkg.com/):
 
-    $ yarn add connected-react-router
+    $ yarn add connected-react-router-config
 
 Usage
 -----
@@ -50,7 +50,7 @@ Usage
 ```js
 // reducers.js
 import { combineReducers } from 'redux'
-import { connectRouter } from 'connected-react-router'
+import { connectRouter } from 'connected-react-router-config'
 
 export default (history) => combineReducers({
   router: connectRouter(history),
@@ -61,7 +61,7 @@ export default (history) => combineReducers({
 ...
 import { createBrowserHistory } from 'history'
 import { applyMiddleware, compose, createStore } from 'redux'
-import { routerMiddleware } from 'connected-react-router'
+import { routerMiddleware } from 'connected-react-router-config'
 import createRootReducer from './reducers'
 ...
 const history = createBrowserHistory()
@@ -88,7 +88,7 @@ const store = createStore(
 ...
 import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router' // react-router v4
-import { ConnectedRouter } from 'connected-react-router'
+import { ConnectedRouter } from 'connected-react-router-config'
 ...
 ReactDOM.render(
   <Provider store={store}>
