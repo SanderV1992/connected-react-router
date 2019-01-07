@@ -9,7 +9,6 @@ import { Provider } from 'react-redux'
 import createConnectedRouter from '../src/ConnectedRouter'
 import { onLocationChanged } from '../src/actions'
 import plainStructure from '../src/structure/plain'
-import { ConnectedRouter } from '../src'
 
 
 Enzyme.configure({ adapter: new Adapter() })

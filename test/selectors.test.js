@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from "redux"
 import { createBrowserHistory } from 'history'
-import { connectRouter, getLocation, createMatchSelector, getAction, getSearch, getHash, getMatchedRoutes, getMatch } from '../src'
+import { connectRouter, getLocation, createMatchSelector, getAction, getSearch, getHash } from '../src'
 import { onLocationChanged } from '../src/actions'
 
 const push = pathname => onLocationChanged(

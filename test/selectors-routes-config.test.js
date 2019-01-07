@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
-import { connectRouter, getMatchedRoutes, getMatch, ConnectedRouter } from '../src'
+import { connectRouter, getMatchedRoutes, getMatch, getMatchParams, ConnectedRouter } from '../src'
 
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -108,6 +108,68 @@ describe("selectors (react-router-config)", () => {
       history.push('/not/found/page')
 
       const californiaMatch = getMatch(store.getState())
+      expect(californiaMatch).toEqual(undefined)
+    })
+  })
+
+  describe("getMatchParams", () => {
+    it("gets the current match params from state", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push('/page/22/test/34')
+
+      const californiaMatch = getMatchParams(store.getState(), 'pageId')
+      expect(californiaMatch).toEqual("22")
+    })
+
+    it("gets the current match params from state (2)", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push('/page/22/test/34')
+
+      const californiaMatch = getMatchParams(store.getState(), 'testId')
+      expect(californiaMatch).toEqual("34")
+    })
+
+    it("gets the current match from state (3)", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push('/not/found/page')
+
+      const californiaMatch = getMatchParams(store.getState(), 'notFound')
+      expect(californiaMatch).toEqual(undefined)
+    })
+
+    it("gets the current match from state (4)", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push('/not/found/page')
+
+      const californiaMatch = getMatchParams(store.getState())
       expect(californiaMatch).toEqual(undefined)
     })
   })
