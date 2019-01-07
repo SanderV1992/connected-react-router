@@ -1,5 +1,6 @@
 import { LOCATION_CHANGE } from './actions'
 
+
 const createConnectRouter = (structure) => {
   const {
     fromJS,
@@ -18,12 +19,13 @@ const createConnectRouter = (structure) => {
     */
     return (state = initialRouterState, { type, payload } = {}) => {
       if (type === LOCATION_CHANGE) {
-        const { location, action, isFirstRendering } = payload
+        const { location, action, matchedRoutes, match, isFirstRendering } = payload
+
         // Don't update the state ref for the first rendering
         // to prevent the double-rendering issue on initilization
         return isFirstRendering
           ? state
-          : merge(state, { location, action })
+          : merge(state, { location, action, matchedRoutes, match })
       }
 
       return state

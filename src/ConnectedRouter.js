@@ -2,21 +2,24 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect, ReactReduxContext } from 'react-redux'
 import { Router } from 'react-router'
+import { matchRoutes } from 'react-router-config'
 import { onLocationChanged } from './actions'
 import createSelectors from './selectors'
 
+
 const createConnectedRouter = (structure) => {
+  const { getIn } = structure
   const { getLocation } = createSelectors(structure)
+
   /*
    * ConnectedRouter listens to a history object passed from props.
    * When history is changed, it dispatches action to redux store.
    * Then, store will pass props to component to render.
    * This creates uni-directional flow from history->store->router->components.
    */
-
   class ConnectedRouter extends PureComponent {
     componentDidMount() {
-      const { store, history, onLocationChanged } = this.props
+      const { store, history, onLocationChanged, routes } = this.props
 
       this.inTimeTravelling = false
 
@@ -50,8 +53,18 @@ const createConnectedRouter = (structure) => {
       const handleLocationChange = (location, action) => {
         // Dispatch onLocationChanged except when we're in time travelling
         if (!this.inTimeTravelling) {
-          onLocationChanged(location, action)
-        } else {
+          if (routes) {
+            const matchedRoutes = matchRoutes(routes, location.pathname)
+            const [currentMatchedRoute] = matchedRoutes.filter((item) => item.match.isExact)
+            const match = currentMatchedRoute && currentMatchedRoute.match ? currentMatchedRoute.match : undefined
+
+            onLocationChanged(location, action, matchedRoutes, match)
+          }
+          else {
+            onLocationChanged(location, action)
+          }
+        }
+        else {
           this.inTimeTravelling = false
         }
       }
@@ -74,7 +87,7 @@ const createConnectedRouter = (structure) => {
 
       return (
         <Router history={history}>
-          { children }
+          {children}
         </Router>
       )
     }
@@ -92,15 +105,25 @@ const createConnectedRouter = (structure) => {
       push: PropTypes.func.isRequired,
     }).isRequired,
     basename: PropTypes.string,
-    children: PropTypes.oneOfType([ PropTypes.func, PropTypes.node ]),
+    children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
     onLocationChanged: PropTypes.func.isRequired,
+    routes: PropTypes.array,
   }
 
-  const mapDispatchToProps = dispatch => ({
-    onLocationChanged: (location, action) => dispatch(onLocationChanged(location, action))
+  const mapStateToProps = (state) => ({
+    action: getIn(state, ['router', 'action']),
+    location: getIn(state, ['router', 'location']),
+    matchedRoutes: getIn(state, ['router', 'matchedRoutes']),
+    match: getIn(state, ['router', 'match']),
   })
 
-  const ConnectedRouterWithContext = props => {
+  const mapDispatchToProps = (dispatch) => ({
+    onLocationChanged: (location, action, matchedRoutes, match) => (
+      dispatch(onLocationChanged(location, action, matchedRoutes, match))
+    ),
+  })
+
+  const ConnectedRouterWithContext = (props) => {
     const Context = props.context || ReactReduxContext
 
     if (Context == null) {
@@ -118,7 +141,7 @@ const createConnectedRouter = (structure) => {
     context: PropTypes.object,
   }
 
-  return connect(null, mapDispatchToProps)(ConnectedRouterWithContext)
+  return connect(mapStateToProps, mapDispatchToProps)(ConnectedRouterWithContext)
 }
 
 export default createConnectedRouter

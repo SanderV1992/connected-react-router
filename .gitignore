@@ -5,3 +5,8 @@ node_modules
 esm
 lib
 umd
+
+# End of https://www.gitignore.io/api/node,macos,linux,windows
+dist
+.vscode
+.idea

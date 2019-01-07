@@ -4,13 +4,15 @@
  */
 export const LOCATION_CHANGE = '@@router/LOCATION_CHANGE'
 
-export const onLocationChanged = (location, action, isFirstRendering = false) => ({
+export const onLocationChanged = (location, action, matchedRoutes, match, isFirstRendering = false) => ({
   type: LOCATION_CHANGE,
   payload: {
     location,
     action,
+    matchedRoutes,
+    match,
     isFirstRendering,
-  }
+  },
 })
 
 /**
@@ -25,8 +27,8 @@ const updateLocation = (method) => {
     type: CALL_HISTORY_METHOD,
     payload: {
       method,
-      args
-    }
+      args,
+    },
   })
 }
 
