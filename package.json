@@ -1,6 +1,6 @@
 {
-  "name": "connected-react-router",
-  "version": "6.1.0",
+  "name": "connected-react-router-config",
+  "version": "6.1.1",
   "description": "A Redux binding for React Router v4",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -75,9 +75,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/supasate/connected-react-router.git"
+    "url": "git+https://github.com/SanderV1992/connected-react-router.git"
   },
   "bugs": {
-    "url": "https://github.com/supasate/connected-react-router/issues"
-  }
+    "url": "https://github.com/SanderV1992/connected-react-router/issues"
+  },
+  "homepage": "https://github.com/SanderV1992/connected-react-router#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "keywords": [
+    "connected-react-router"
+  ]
 }
