@@ -19,7 +19,7 @@ const createSelectors = (structure) => {
   const getSearch = state => toJS(getIn(getRouter(state), ['location', 'search']))
   const getHash = state => toJS(getIn(getRouter(state), ['location', 'hash']))
   const getMatch = state => toJS(getIn(getRouter(state), ['match']))
-  const getMatchParams = (state, slug) => toJS(getIn(getRouter(state), ['match', 'params', slug]))
+  const getMatchParam = (state, slug) => toJS(getIn(getRouter(state), ['match', 'params', slug]))
   const getMatchedRoutes = state => toJS(getIn(getRouter(state), ['matchedRoutes']))
 
   // It only makes sense to recalculate the `matchPath` whenever the pathname
@@ -51,7 +51,7 @@ const createSelectors = (structure) => {
     getSearch,
     getHash,
     getMatch,
-    getMatchParams,
+    getMatchParam,
     getMatchedRoutes,
     createMatchSelector,
   }

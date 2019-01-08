@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
-import { connectRouter, getMatchedRoutes, getMatch, getMatchParams, ConnectedRouter } from '../src'
+import { connectRouter, getMatchedRoutes, getMatch, getMatchParam, ConnectedRouter } from '../src'
 
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -112,7 +112,7 @@ describe("selectors (react-router-config)", () => {
     })
   })
 
-  describe("getMatchParams", () => {
+  describe("getMatchParam", () => {
     it("gets the current match params from state", () => {
       mount(
         <Provider store={store}>
@@ -124,7 +124,7 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatchParams(store.getState(), 'pageId')
+      const californiaMatch = getMatchParam(store.getState(), 'pageId')
       expect(californiaMatch).toEqual("22")
     })
 
@@ -139,7 +139,7 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatchParams(store.getState(), 'testId')
+      const californiaMatch = getMatchParam(store.getState(), 'testId')
       expect(californiaMatch).toEqual("34")
     })
 
@@ -154,7 +154,7 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/not/found/page')
 
-      const californiaMatch = getMatchParams(store.getState(), 'notFound')
+      const californiaMatch = getMatchParam(store.getState(), 'notFound')
       expect(californiaMatch).toEqual(undefined)
     })
 
@@ -169,7 +169,7 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/not/found/page')
 
-      const californiaMatch = getMatchParams(store.getState())
+      const californiaMatch = getMatchParam(store.getState())
       expect(californiaMatch).toEqual(undefined)
     })
   })

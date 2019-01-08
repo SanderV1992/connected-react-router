@@ -15,9 +15,22 @@ declare module 'connected-react-router' {
 
   export type RouterActionType = 'POP' | 'PUSH' | 'REPLACE';
 
+  export interface Match {
+      path: String;
+      url: String;
+      isExact: Boolean,
+  }
+
+  export type MatchedRoutes = {
+    route: Object,
+    match: Match
+  }[]
+
   export interface RouterState {
     location: Location
-    action: RouterActionType
+    action: RouterActionType,
+    matchedRoutes: MatchedRoutes,
+    match: Match,
   }
 
   export const LOCATION_CHANGE: '@@router/LOCATION_CHANGE';
@@ -46,6 +59,9 @@ declare module 'connected-react-router' {
   export function getHash(state): string;
   export function getLocation(state): Location;
   export function getSearch(state): string;
+  export function getMatch(state): Match;
+  export function getMatchParam(state, slug): String | Number;
+  export function getMatchedRoutes(state): MatchedRoutes;
 
   export type Push = typeof push;
   export type Replace = typeof replace;
