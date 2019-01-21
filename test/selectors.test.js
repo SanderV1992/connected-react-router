@@ -9,7 +9,7 @@ const push = pathname => onLocationChanged(
     search: '',
     hash: '',
   },
-  'PUSH',
+  'PUSH'
 )
 
 describe("selectors", () => {
@@ -18,7 +18,7 @@ describe("selectors", () => {
   beforeEach(() => {
     const history = createBrowserHistory()
     const reducer = combineReducers({
-      router: connectRouter(history),
+      router: connectRouter(history)
     })
     store = createStore(reducer)
   })

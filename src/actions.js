@@ -12,7 +12,7 @@ export const onLocationChanged = (location, action, matchedRoutes, match, isFirs
     matchedRoutes,
     match,
     isFirstRendering,
-  },
+  }
 })
 
 /**
@@ -27,8 +27,8 @@ const updateLocation = (method) => {
     type: CALL_HISTORY_METHOD,
     payload: {
       method,
-      args,
-    },
+      args
+    }
   })
 }
 

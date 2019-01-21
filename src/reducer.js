@@ -1,6 +1,5 @@
 import { LOCATION_CHANGE } from './actions'
 
-
 const createConnectRouter = (structure) => {
   const {
     fromJS,

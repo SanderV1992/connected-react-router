@@ -6,7 +6,6 @@ import { LOCATION_CHANGE, connectRouter } from '../src'
 import { connectRouter as connectRouterImmutable } from '../src/immutable'
 import { connectRouter as connectRouterSeamlessImmutable } from '../src/seamless-immutable'
 
-
 describe('connectRouter', () => {
   let mockHistory
 
@@ -171,7 +170,7 @@ describe('connectRouter', () => {
           },
           action: 'PUSH',
           matchedRoutes: undefined,
-          match: undefined
+          match: undefined,
         },
       })
       expect(nextState).toEqual(expectedState)
@@ -209,7 +208,7 @@ describe('connectRouter', () => {
   })
 
   describe('with seamless immutable structure', () => {
-    it('creates new root reducer with router reducer inside 2', () => {
+    it('creates new root reducer with router reducer inside', () => {
       const mockReducer = (state = {}, action) => {
         switch (action.type) {
           default:

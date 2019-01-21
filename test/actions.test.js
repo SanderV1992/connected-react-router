@@ -28,7 +28,7 @@ describe('Actions', () => {
   })
 
   it('returns correct action when calling onLocationChanged() for the first rendering', () => {
-    const actualAction = onLocationChanged({ pathname: '/', search: '', hash: '' }, 'POP', [], undefined, true)
+    const actualAction = onLocationChanged({ pathname: '/', search: '', hash: '' }, 'POP', [], {}, true)
     const expectedAction = {
       type: LOCATION_CHANGE,
       payload: {
@@ -39,26 +39,7 @@ describe('Actions', () => {
         },
         action: 'POP',
         matchedRoutes: [],
-        match: undefined,
-        isFirstRendering: true,
-      },
-    }
-    expect(actualAction).toEqual(expectedAction)
-  })
-
-  it('returns correct action when calling onLocationChanged() for the first rendering (2)', () => {
-    const actualAction = onLocationChanged({ pathname: '/', search: '', hash: '' }, 'POP', [{ routes: [] }], { path: '/test', url: '/test' }, true)
-    const expectedAction = {
-      type: LOCATION_CHANGE,
-      payload: {
-        location: {
-          pathname: '/',
-          search: '',
-          hash: '',
-        },
-        action: 'POP',
-        matchedRoutes: [{ routes: [] }],
-        match: { path: '/test', url: '/test' },
+        match: {},
         isFirstRendering: true,
       },
     }

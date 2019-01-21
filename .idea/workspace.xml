@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e92c4963-16f9-49a4-a6eb-b263effd1c30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/code-comments.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/connected-react-router-master 4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/basic/src/configureStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/immutable/src/configureStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/typescript/src/configureStore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jestrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.jestrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACKNOWLEDGE.md" beforeDir="false" afterPath="$PROJECT_DIR$/ACKNOWLEDGE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ.md" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/actions/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/actions/counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/Hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/Hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/HelloChild.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/HelloChild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/components/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/components/NoMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/reducers/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/reducers/counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/examples/basic/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/actions/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/actions/counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/Hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/Hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/HelloChild.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/HelloChild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/components/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/components/NoMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/reducers/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/reducers/counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/immutable/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/examples/immutable/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/actions/counter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/actions/counter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/Counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/Hello.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/Hello.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/HelloChild.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/HelloChild.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/components/NoMatch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/components/NoMatch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/reducers/counter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/reducers/counter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/typescript/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/examples/typescript/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/immutable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/immutable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/immutable.js" beforeDir="false" afterPath="$PROJECT_DIR$/immutable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seamless-immutable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/seamless-immutable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seamless-immutable.js" beforeDir="false" afterPath="$PROJECT_DIR$/seamless-immutable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectedRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectedRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/immutable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/immutable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seamless-immutable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/seamless-immutable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/immutable/getIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/immutable/getIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/immutable/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/immutable/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/plain/getIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/plain/getIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/plain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/plain/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/seamless-immutable/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/seamless-immutable/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ConnectedRouter.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/ConnectedRouter.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/actions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/actions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/middleware.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/middleware.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/reducer-routes-config.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/reducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/selectors.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-13746480">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="42" />
+          <entry key="Markdown" value="2" />
+          <entry key="TypeScript" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="208" />
+          <entry key="Markdown" value="47" />
+          <entry key="TypeScript" value="31" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConnectedRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/actions.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ConnectedRouter.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/immutable.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/middleware.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/reducer.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/seamless-immutable.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/selectors.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>matchSelectorFn</find>
+      <find>createMatchSelector</find>
+      <find>Match</find>
+      <find>MatchedRoutes</find>
+      <find>connected-react-router</find>
+      <find>getSearch</find>
+      <find>getIn</find>
+      <find>location</find>
+      <find>routes</find>
+      <find>matchRoutes</find>
+      <find>4.4.0-beta.6</find>
+      <find>react-ro</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/test</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/2index.d.ts" />
+        <option value="$PROJECT_DIR$/index.d.ts" />
+        <option value="$PROJECT_DIR$/src/actions.js" />
+        <option value="$PROJECT_DIR$/src/selectors.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/reducer.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/immutable.js" />
+        <option value="$PROJECT_DIR$/src/seamless-immutable.js" />
+        <option value="$PROJECT_DIR$/src/ConnectedRouter2.js" />
+        <option value="$PROJECT_DIR$/test/actions.test.js" />
+        <option value="$PROJECT_DIR$/test/reducer.test.js" />
+        <option value="$PROJECT_DIR$/src/ConnectedRouter.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/examples/basic/package.json" />
+      <path value="$PROJECT_DIR$/examples/immutable/package.json" />
+      <path value="$PROJECT_DIR$/examples/typescript/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="connected-react-router-master 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connected-react-router-master 4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.selectors (react-router-config)">
+    <configuration name="ConnectedRouter (react-router-config)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/ConnectedRouterRoutesConfig.test.js" />
+      <test-names>
+        <test-name value="ConnectedRouter (react-router-config)" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="connectRouter" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/reducer.test.js" />
+      <test-names>
+        <test-name value="connectRouter" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="connectRouter.with immutable structure.creates new root reducer with router reducer inside" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/reducer.test.js" />
+      <test-names>
+        <test-name value="connectRouter" />
+        <test-name value="with immutable structure" />
+        <test-name value="creates new root reducer with router reducer inside" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="selectors (react-router-config)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/selectors-routes-config.test.js" />
+      <test-names>
+        <test-name value="selectors (react-router-config)" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="selectors" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/selectors.test.js" />
+      <test-names>
+        <test-name value="selectors" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.connectRouter" />
+      <item itemvalue="Jest.connectRouter.with immutable structure.creates new root reducer with router reducer inside" />
+      <item itemvalue="Jest.selectors" />
+      <item itemvalue="Jest.ConnectedRouter (react-router-config)" />
+      <item itemvalue="Jest.selectors (react-router-config)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.selectors (react-router-config)" />
+        <item itemvalue="Jest.ConnectedRouter (react-router-config)" />
+        <item itemvalue="Jest.selectors" />
+        <item itemvalue="Jest.connectRouter" />
+        <item itemvalue="Jest.connectRouter.with immutable structure.creates new root reducer with router reducer inside" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e92c4963-16f9-49a4-a6eb-b263effd1c30" name="Default Changelist" comment="" />
+      <created>1548085630084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548085630084</updated>
+      <workItem from="1548085631347" duration="3750000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="connectRouter - 2019.01.21 at 18h 35m 43s.xml">
+      <configuration name="connectRouter" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="connectRouter_with_immutable_structure - 2019.01.21 at 18h 36m 47s.xml">
+      <configuration name="connectRouter.with immutable structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="connectRouter_with_immutable_structure_creates_new_root_reducer_with_router_reducer_inside - 2019.01.21 at 18h 37m 04s.xml">
+      <configuration name="connectRouter.with immutable structure.creates new root reducer with router reducer inside" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="connectRouter_with_immutable_structure_creates_new_root_reducer_with_router_reducer_inside - 2019.01.21 at 18h 37m 16s.xml">
+      <configuration name="connectRouter.with immutable structure.creates new root reducer with router reducer inside" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="connectRouter - 2019.01.21 at 18h 37m 21s.xml">
+      <configuration name="connectRouter" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="selectors - 2019.01.21 at 18h 37m 25s.xml">
+      <configuration name="selectors" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="ConnectedRouter_(react-router-config) - 2019.01.21 at 18h 37m 44s.xml">
+      <configuration name="ConnectedRouter (react-router-config)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="selectors_(react-router-config) - 2019.01.21 at 18h 38m 00s.xml">
+      <configuration name="selectors (react-router-config)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="selectors_(react-router-config) - 2019.01.21 at 18h 40m 12s.xml">
+      <configuration name="selectors (react-router-config)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="selectors_(react-router-config) - 2019.01.21 at 18h 43m 06s.xml">
+      <configuration name="selectors (react-router-config)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3750000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="789" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" weight="0.32998565" />
+      <window_info anchor="bottom" id="Code comment" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" weight="0.6312769" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2840746" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-430">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectors2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="52" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="122" selection-start-column="100" selection-end-column="122" />
+            <folding>
+              <element signature="e#15#54#0" expanded="true" />
+              <element signature="e#25#71#0" expanded="true" />
+              <element signature="e#119#175#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seamless-immutable.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seamless-immutable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducer2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/seamless-immutable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectedRouter2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/actions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ConnectedRouter.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/middleware.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/reducer.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="172" column="27" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/immutable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ConnectedRouterRoutesConfig.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/selectors.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/selectors-routes-config.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1630">
+          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#44#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/actions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ConnectedRouter.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/immutable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/middleware.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/seamless-immutable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/selectors.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectedRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

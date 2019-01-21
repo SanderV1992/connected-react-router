@@ -1,6 +1,7 @@
 declare module 'connected-react-router' {
   import * as React from 'react';
   import { Middleware, Reducer } from 'redux';
+  import { match } from 'react-router';
   import {
     History,
     Path,
@@ -22,15 +23,15 @@ declare module 'connected-react-router' {
   }
 
   export type MatchedRoutes = {
-    route: Object,
-    match: Match
+      route: Object,
+      match: Match
   }[]
 
   export interface RouterState {
-    location: Location
-    action: RouterActionType,
-    matchedRoutes: MatchedRoutes,
-    match: Match,
+      location: Location
+      action: RouterActionType,
+      matchedRoutes: MatchedRoutes,
+      match: Match,
   }
 
   export const LOCATION_CHANGE: '@@router/LOCATION_CHANGE';
@@ -46,6 +47,14 @@ declare module 'connected-react-router' {
     payload: LocationActionPayload;
   }
 
+  export interface RouterRootState {
+    router: RouterState;
+  }
+
+  export type matchSelectorFn<
+    S extends RouterRootState, Params extends { [K in keyof Params]?: string }
+  > = (state: S) => match<Params> | null;
+
   export type RouterAction = LocationChangeAction | CallHistoryMethodAction;
 
   export function push(path: Path, state?: LocationState): CallHistoryMethodAction;
@@ -55,10 +64,14 @@ declare module 'connected-react-router' {
   export function go(n: number): CallHistoryMethodAction;
   export function goBack(): CallHistoryMethodAction;
   export function goForward(): CallHistoryMethodAction;
-  export function getAction(state): RouterActionType;
-  export function getHash(state): string;
-  export function getLocation(state): Location;
-  export function getSearch(state): string;
+  export function getRouter<S extends RouterRootState>(state: S): RouterState;
+  export function getAction<S extends RouterRootState>(state: S): RouterActionType;
+  export function getHash<S extends RouterRootState>(state: S): string;
+  export function getLocation<S extends RouterRootState>(state: S): Location;
+  export function getSearch<S extends RouterRootState>(state: S): string;
+  export function createMatchSelector<
+    S extends RouterRootState, Params extends { [K in keyof Params]?: string }
+  >(path: string): matchSelectorFn<S, Params>;
   export function getMatch(state): Match;
   export function getMatchParam(state, slug): String | Number;
   export function getMatchedRoutes(state): MatchedRoutes;

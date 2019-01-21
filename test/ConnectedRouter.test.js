@@ -15,7 +15,6 @@ import immutableStructure from '../src/structure/immutable'
 import seamlessImmutableStructure from '../src/structure/seamless-immutable'
 import { connectRouter, ConnectedRouter, routerMiddleware } from '../src'
 
-
 Enzyme.configure({ adapter: new Adapter() })
 
 const { mount } = Enzyme
@@ -135,7 +134,7 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
@@ -170,14 +169,14 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
 
       store.dispatch({ type: 'testAction' })
       history.push('/new-location')
-      expect(renderCount).toBe(3)
+      expect(renderCount).toBe(2)
     })
   })
 
@@ -256,7 +255,7 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
@@ -291,14 +290,14 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
 
       store.dispatch({ type: 'testAction' })
       history.push('/new-location')
-      expect(renderCount).toBe(3)
+      expect(renderCount).toBe(2)
     })
   })
 
@@ -359,7 +358,7 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
@@ -394,14 +393,14 @@ describe('ConnectedRouter', () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter {...props}>
-            <Route path="/" component={RenderCounter} />
+              <Route path="/" component={RenderCounter} />
           </ConnectedRouter>
         </Provider>
       )
 
       store.dispatch({ type: 'testAction' })
       history.push('/new-location')
-      expect(renderCount).toBe(3)
+      expect(renderCount).toBe(2)
     })
   })
 
