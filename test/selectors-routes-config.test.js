@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
-import { connectRouter, getMatchedRoutes, getMatch, getMatchParam, ConnectedRouter } from '../src'
+import { connectRouter, getMatchedRoutes, getMatch, getMatchParam, ConnectedRouter, getLocationState } from '../src'
 
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -75,6 +75,41 @@ describe("selectors (react-router-config)", () => {
     store = createStore(reducer)
   })
 
+  describe("getLocationState", () => {
+    it("gets the current match from state", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push({
+        pathname: '/page/22/test/34',
+        state: { test1: 111, test2: 222, test3: 3, test4: '444' },
+      })
+
+      const state = getLocationState(store.getState())
+      expect(state).toEqual({ test1: 111, test2: 222, test3: 3, test4: '444' })
+    })
+
+    it("gets the current match from state (2)", () => {
+      mount(
+        <Provider store={store}>
+          <ConnectedRouter history={history} routes={routes}>
+            {renderRoutes(routes)}
+          </ConnectedRouter>
+        </Provider>
+      )
+
+      history.push('/not/found/page')
+
+      const state = getMatch(store.getState())
+      expect(state).toEqual(undefined)
+    })
+  })
+
   describe("getMatch", () => {
     it("gets the current match from state", () => {
       mount(
@@ -87,8 +122,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatch(store.getState())
-      expect(californiaMatch).toEqual({
+      const match = getMatch(store.getState())
+      expect(match).toEqual({
         "isExact": true,
         "params": { "pageId": "22", "testId": "34" },
         "path": "/page/:pageId/test/:testId",
@@ -107,8 +142,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/not/found/page')
 
-      const californiaMatch = getMatch(store.getState())
-      expect(californiaMatch).toEqual(undefined)
+      const match = getMatch(store.getState())
+      expect(match).toEqual(undefined)
     })
   })
 
@@ -124,8 +159,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatchParam(store.getState(), 'pageId')
-      expect(californiaMatch).toEqual("22")
+      const match = getMatchParam(store.getState(), 'pageId')
+      expect(match).toEqual("22")
     })
 
     it("gets the current match params from state (2)", () => {
@@ -139,8 +174,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatchParam(store.getState(), 'testId')
-      expect(californiaMatch).toEqual("34")
+      const match = getMatchParam(store.getState(), 'testId')
+      expect(match).toEqual("34")
     })
 
     it("gets the current match from state (3)", () => {
@@ -154,8 +189,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/not/found/page')
 
-      const californiaMatch = getMatchParam(store.getState(), 'notFound')
-      expect(californiaMatch).toEqual(undefined)
+      const match = getMatchParam(store.getState(), 'notFound')
+      expect(match).toEqual(undefined)
     })
 
     it("gets the current match from state (4)", () => {
@@ -169,8 +204,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/not/found/page')
 
-      const californiaMatch = getMatchParam(store.getState())
-      expect(californiaMatch).toEqual(undefined)
+      const match = getMatchParam(store.getState())
+      expect(match).toEqual(undefined)
     })
   })
 
@@ -186,8 +221,8 @@ describe("selectors (react-router-config)", () => {
 
       history.push('/page/22/test/34')
 
-      const californiaMatch = getMatchedRoutes(store.getState())
-      expect(californiaMatch).toEqual([
+      const match = getMatchedRoutes(store.getState())
+      expect(match).toEqual([
         {
           "match": { "isExact": false, "params": {}, "path": "/", "url": "/" },
           "route": {
