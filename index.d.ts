@@ -68,13 +68,15 @@ declare module 'connected-react-router' {
   export function getAction<S extends RouterRootState>(state: S): RouterActionType;
   export function getHash<S extends RouterRootState>(state: S): string;
   export function getLocation<S extends RouterRootState>(state: S): Location;
+  export function getLocationState<S extends RouterRootState>(state: S): any;
+  export function getLocationStateParam<S extends RouterRootState>(state: S): any;
   export function getSearch<S extends RouterRootState>(state: S): string;
   export function createMatchSelector<
     S extends RouterRootState, Params extends { [K in keyof Params]?: string }
   >(path: string): matchSelectorFn<S, Params>;
-  export function getMatch(state): Match;
-  export function getMatchParam(state, slug): String | Number;
-  export function getMatchedRoutes(state): MatchedRoutes;
+  export function getMatch<S extends RouterRootState>(state: S): Match;
+  export function getMatchParam<S extends RouterRootState>(state: S, slug: String | Number): String | Number;
+  export function getMatchedRoutes<S extends RouterRootState>(state: S): MatchedRoutes;
 
   export type Push = typeof push;
   export type Replace = typeof replace;
