@@ -16,6 +16,7 @@ const createSelectors = (structure) => {
   }
   const getLocation = state => toJS(getIn(getRouter(state), ['location']))
   const getLocationState = state => toJS(getIn(getRouter(state), ['location', 'state']))
+  const getLocationStateParam = (state, slug) => toJS(getIn(getRouter(state), ['location', 'state', slug]))
   const getAction = state => toJS(getIn(getRouter(state), ['action']))
   const getSearch = state => toJS(getIn(getRouter(state), ['location', 'search']))
   const getHash = state => toJS(getIn(getRouter(state), ['location', 'hash']))
@@ -48,6 +49,7 @@ const createSelectors = (structure) => {
   return {
     getLocation,
     getLocationState,
+    getLocationStateParam,
     getAction,
     getRouter,
     getSearch,

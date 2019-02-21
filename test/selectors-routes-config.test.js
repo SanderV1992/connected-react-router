@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
-import { connectRouter, getMatchedRoutes, getMatch, getMatchParam, ConnectedRouter, getLocationState } from '../src'
+import { connectRouter, getMatchedRoutes, getMatch, getMatchParam, ConnectedRouter, getLocationState, getLocationStateParam } from '../src'
 
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -76,7 +76,7 @@ describe("selectors (react-router-config)", () => {
   })
 
   describe("getLocationState", () => {
-    it("gets the current match from state", () => {
+    it("gets the state from current location", () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter history={history} routes={routes}>
@@ -93,8 +93,10 @@ describe("selectors (react-router-config)", () => {
       const state = getLocationState(store.getState())
       expect(state).toEqual({ test1: 111, test2: 222, test3: 3, test4: '444' })
     })
+  })
 
-    it("gets the current match from state (2)", () => {
+  describe("getLocationStateParam", () => {
+    it("gets the state data by slug from current location", () => {
       mount(
         <Provider store={store}>
           <ConnectedRouter history={history} routes={routes}>
@@ -103,10 +105,13 @@ describe("selectors (react-router-config)", () => {
         </Provider>
       )
 
-      history.push('/not/found/page')
+      history.push({
+        pathname: '/page/22/test/34',
+        state: { test1: 111, test2: 222, test3: 3, test4: '444' },
+      })
 
-      const state = getMatch(store.getState())
-      expect(state).toEqual(undefined)
+      const state = getLocationStateParam(store.getState(), 'test4')
+      expect(state).toEqual('444')
     })
   })
 
